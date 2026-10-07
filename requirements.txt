@@ -1,0 +1,47 @@
+# ===========================================================================
+# CapField-OPD - core training / inference dependencies.
+#
+# Reference environment (conda env: capfieldopd), the most important versions:
+#   python       3.10
+#   torch        2.7.0  (+cu128)
+#   diffusers    0.36.0
+#   transformers 4.45.2
+#   accelerate   1.12.0
+#   peft         0.18.1
+#
+# Install:
+#   conda create -n capfieldopd python=3.10 -y
+#   conda activate capfieldopd
+#   pip install torch==2.7.0 --index-url https://download.pytorch.org/whl/cu128
+#   pip install -r requirements.txt
+# ===========================================================================
+
+# --- Core -------------------------------------------------------------------
+torch==2.7.0
+diffusers==0.36.0
+transformers==4.45.2
+peft==0.18.1
+accelerate==1.12.0
+safetensors
+sentencepiece
+protobuf
+Pillow
+numpy
+tqdm
+
+# ---------------------------------------------------------------------------
+# Optional: reward server (evaluation only, see reward_server.py).
+# Install the subset you need for the rewards you actually evaluate.
+#
+#   fastapi
+#   uvicorn
+#   requests
+#   open-clip-torch          # clip
+#   paddleocr                # paddleocr
+#   python-Levenshtein       # paddleocr
+#   clip-benchmark           # geneval
+#   mmcv                     # geneval (use the 1.x branch, built from source)
+#   mmdet                    # geneval (use the 2.x branch, built from source)
+#   openmim                  # geneval
+# hpsv3 is provided by the external `hpsv3` package (aesthetic reward).
+# ---------------------------------------------------------------------------
