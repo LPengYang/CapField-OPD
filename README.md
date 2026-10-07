@@ -79,7 +79,7 @@ CapField-OPD/
 
 ## Installation
 
-The setup follows the same recipe as the PaveGRPO / stablegrpo environment; the conda environment is named **`capfieldopd`**.
+The conda environment is named **`capfieldopd`**.
 
 ```bash
 conda create -n capfieldopd python=3.10 -y
