@@ -115,7 +115,7 @@ torchrun \
     --rollout_cond_vectors "${ROLLOUT_VECS[@]}" \
     --rollout_cond_probs "${ROLLOUT_PROBS[@]}" \
     --output_dir "${OUTPUT_DIR}" \
-    --seed 142 \
+    --seed 42 \
     --batch_size 1 \
     --dataloader_num_workers 0 \
     --mixed_precision bf16 \
